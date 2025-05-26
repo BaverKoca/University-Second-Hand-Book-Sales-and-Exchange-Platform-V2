@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>University Book Exchange</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body class="bg-gray-50">
+    <!-- Navigation -->
+    <nav class="bg-indigo-600 shadow-lg" id="navbar">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16">
+                <div class="flex">
+                    <div class="flex-shrink-0 flex items-center">
+                        <h1 class="text-white text-xl font-bold">📚 UniBook Exchange</h1>
+                    </div>
+                    <div class="hidden sm:ml-6 sm:flex sm:space-x-8" id="nav-links">
+                        <!-- Navigation links will be injected here -->
+                    </div>
+                </div>
+                <div class="flex items-center">
+                    <div class="hidden sm:ml-6 sm:flex sm:items-center" id="user-menu">
+                        <!-- User menu will be injected here -->
+                    </div>
+                    <button type="button" class="sm:hidden p-2 rounded-md text-gray-100 hover:text-white focus:outline-none" id="mobile-menu-button">
+                        <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="sm:hidden hidden" id="mobile-menu">
+            <!-- Mobile menu will be injected here -->
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="max-w-7xl mx-auto py-6 sm:px-6 lg:px-8" id="main-content">
+        <!-- Content will be injected here -->
+    </main>
+
+    <!-- Toast Notifications -->
+    <div class="fixed bottom-0 right-0 m-8" id="toast-container"></div>
+
+    <!-- Modal Container -->
+    <div class="fixed inset-0 bg-gray-500 bg-opacity-75 hidden flex items-center justify-center" id="modal-container">
+        <div class="bg-white rounded-lg shadow-xl max-w-md w-full mx-4">
+            <!-- Modal content will be injected here -->
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="/js/api.js"></script>
+    <script src="/js/auth.js"></script>
+    <script src="/js/ui.js"></script>
+    <script src="/js/books.js"></script>
+    <script src="/js/messages.js"></script>
+    <script src="/js/app.js"></script>
+</body>
+</html> 

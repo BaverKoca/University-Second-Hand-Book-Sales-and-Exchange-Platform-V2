@@ -1,0 +1,134 @@
+/* Custom Animations */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes slideIn {
+    from { transform: translateY(1rem); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+}
+
+@keyframes slideInRight {
+    from { transform: translateX(1rem); opacity: 0; }
+    to { transform: translateX(0); opacity: 1; }
+}
+
+/* Toast Notifications */
+.toast {
+    animation: slideInRight 0.3s ease-out;
+}
+
+/* Modal Animations */
+.modal-enter {
+    animation: fadeIn 0.2s ease-out;
+}
+
+.modal-content-enter {
+    animation: slideIn 0.3s ease-out;
+}
+
+/* Card Hover Effects */
+.book-card {
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+.book-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #cbd5e0;
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #a0aec0;
+}
+
+/* Form Elements */
+.form-input:focus {
+    box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.2);
+}
+
+/* Loading Spinner */
+.spinner {
+    border: 3px solid #f3f3f3;
+    border-top: 3px solid #6366f1;
+    border-radius: 50%;
+    width: 24px;
+    height: 24px;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+/* Message Bubbles */
+.message-bubble {
+    max-width: 80%;
+    word-wrap: break-word;
+}
+
+.message-bubble.sent {
+    background-color: #6366f1;
+    color: white;
+    border-radius: 1rem 0 1rem 1rem;
+}
+
+.message-bubble.received {
+    background-color: #e5e7eb;
+    color: black;
+    border-radius: 0 1rem 1rem 1rem;
+}
+
+/* Book Status Tags */
+.status-tag {
+    padding: 0.25rem 0.75rem;
+    border-radius: 9999px;
+    font-size: 0.75rem;
+    font-weight: 500;
+}
+
+.status-available {
+    background-color: #def7ec;
+    color: #03543f;
+}
+
+.status-sold {
+    background-color: #fde8e8;
+    color: #9b1c1c;
+}
+
+.status-reserved {
+    background-color: #fdf6b2;
+    color: #723b13;
+}
+
+/* Responsive Grid */
+.book-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 1.5rem;
+}
+
+/* Mobile Navigation Menu */
+@media (max-width: 640px) {
+    .mobile-menu-enter {
+        animation: slideIn 0.3s ease-out;
+    }
+} 
